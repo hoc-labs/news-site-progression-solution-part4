@@ -17,6 +17,11 @@ body {
   background-color: var(--light-color);
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .topic {
   color: #fff;
   font-size: 9px;
@@ -41,7 +46,6 @@ body {
   background-color: var(--science-color);
 }
 
-
 /********************************* Articles **************************/
 article img {
   width: 100%;
@@ -58,7 +62,7 @@ a {
   grid-gap: 16px;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .articles {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -77,7 +81,7 @@ a {
   background: url("./images/robot.jpg") center/cover;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .showcase p {
     width: 50%;
   }
@@ -98,7 +102,6 @@ a {
 .nav-container {
   background-color: #fff;
   padding: 18px;
-  width: 100%;
 }
 
 /* this style centers the image within the anchor */
@@ -117,14 +120,14 @@ a {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding-left:0;
+  padding: 0;
+  margin: 0;
 }
 
 /* style for larger widths */
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .nav-container ul {
     flex-direction: row;
-    width: 100%;
     justify-content: space-around;
   }
 }
@@ -148,7 +151,7 @@ a {
   grid-gap: 32px;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
